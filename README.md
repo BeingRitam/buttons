@@ -1,4 +1,4 @@
-# Buttons (Beta/v 0.2)
+# Buttons (Beta/v 0.3)
 A free & open-source CSS3 button library for your web projects.
 
 ## Documentation
