@@ -1,4 +1,4 @@
-/*Buttons (Beta/v 0.3) - A free & open-source CSS3 button library for your web projects. */
+/*Buttons (Beta/v 0.4) - A free & open-source CSS3 button library for your web projects. */
 /* Created By - Ritam Das */
 
 .button{
@@ -8,7 +8,7 @@
   font-size: 16px;
   font-family: "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
   border: none;
-  padding: 5px 30px;
+  padding: 5px 20px;
   text-align:center;
   display: inline-block;
   margin: 0;
@@ -374,8 +374,58 @@
     background: -webkit-gradient(linear, left top, left bottom, from(#34495e), to(#4e6882));
     background: -moz-linear-gradient(top,  #34495e,  #4e6882);
 }
-/*-------------------------------------------------------------------- Raides Buttons End ----------------------------------------------------------------------*/
-/*-------------------------------------------------------------------- Flat Color Buttons Start ----------------------------------------------------------------------*/
+/*-------------------------- Raides Buttons End ----------------------------------------*/
+/*---------------------------- Border Buttons Start -----------------------------*/
+.button-border{background: none; border: 2px solid #666; color: #666;}
+
+.button-border:hover, .button-border:focus{
+  background-color: rgba(102, 102, 102, .8);
+  border-color: rgba(102, 102, 102, .1);
+}
+
+.button-border:active, .button-border.is-active{
+  background-color: rgba(102, 102, 102, 0.6);
+  border-color: rgba(102, 102, 102, .1);
+  -webkit-box-shadow: none;
+          box-shadow: none;
+  text-shadow: none;
+  -webkit-transition-property: all;
+          transition-property: all;
+  -webkit-transition-duration: .3s;
+          transition-duration: .3s;
+  -webkit-transition-timing-function: ease;
+          transition-timing-function: ease;
+}
+
+.button-border.button-primary{border-color: #3598db; color: #3598db; background: none;}
+.button-border.button-primary:hover, .button-border.button-primary:hover{background-color: rgba(53, 152, 219, 0.8); border-color: rgba(53, 152, 219, .1);}
+.button-border.button-primary:active, .button-border.button-primary.is-active{background-color: rgba(53, 152, 219, 0.6); border-color: rgba(53, 152, 219, .1); color: rgba(255, 255, 255, 0.6);}
+
+.button-border.button-warning{border-color: #fcbb5f; color: #fcbb5f; background: none;}
+.button-border.button-warning:hover, .button-border.button-warning:hover{background-color: rgba(252,187,95, 0.8); border-color: rgba(252,187,95, .1);}
+.button-border.button-warning:active, .button-border.button-warning.is-active{background-color: rgba(252,187,95, 0.6); border-color: rgba(252,187,95, .1); color: rgba(255, 255, 255, 0.6);}
+
+.button-border.button-danger{border-color: #FF524E; color: #FF524E; background: none;}
+.button-border.button-danger:hover, .button-border.button-danger:hover{background-color: rgba(255,82,78, 0.8); border-color: rgba(255,82,78, .1);}
+.button-border.button-danger:active, .button-border.button-danger.is-active{background-color: rgba(255,82,78, 0.6); border-color: rgba(255,82,78, .1); color: rgba(255, 255, 255, 0.6);}
+
+.button-border.button-success{border-color: #6AC53C; color: #6AC53C; background: none;}
+.button-border.button-success:hover, .button-border.button-success:hover{background-color: rgba(106,197,60, 0.8); border-color: rgba(106,197,60, .1);}
+.button-border.button-success:active, .button-border.button-success.is-active{background-color: rgba(106,197,60, 0.6); border-color: rgba(106,197,60, .1); color: rgba(255, 255, 255, 0.6);}
+
+.button-border.button-wisteria{border-color: #8e44ad; color: #8e44ad; background: none;}
+.button-border.button-wisteria:hover, .button-border.button-wisteria:hover{background-color: rgba(142,68,173, 0.8); border-color: rgba(142,68,173, .1);}
+.button-border.button-wisteria:active, .button-border.button-wisteria.is-active{background-color: rgba(142,68,173, 0.6); border-color: rgba(142,68,173, .1); color: rgba(255, 255, 255, 0.6);}
+
+.button-border.button-turquoise{border-color: #1abc9c; color: #1abc9c; background: none;}
+.button-border.button-turquoise:hover, .button-border.button-turquoise:hover{background-color: rgba(26,188,156, 0.8); border-color: rgba(26,188,156, .1);}
+.button-border.button-turquoise:active, .button-border.button-turquoise.is-active{background-color: rgba(26,188,156, 0.6); border-color: rgba(26,188,156, .1); color: rgba(255, 255, 255, 0.6);}
+
+.button-border.button-wetasphalt{border-color: #34495e; color: #34495e; background: none;}
+.button-border.button-wetasphalt:hover, .button-border.button-wetasphalt:hover{background-color: rgba(52,73,94, 0.8); border-color: rgba(52,73,94, .1);}
+.button-border.button-wetasphalt:active, .button-border.button-wetasphalt.is-active{background-color: rgba(52,73,94, 0.6); border-color: rgba(52,73,94, .1); color: rgba(255, 255, 255, 0.6);}
+/*---------------------------- Border Buttons End -----------------------------*/
+/*---------------------------- Flat Color Buttons Start -----------------------------*/
 .button-primary{background-color: #3598DB;}
 .button-primary:hover, .button-primary:focus{background-color: #63b9f2; color: #fff;}
 .button-primary:active, .button-primary.is-active{color: #3598DB;}
@@ -408,10 +458,13 @@
 
 
 
-/*-------------------------------------------------------------------- Flat Color Buttons End ----------------------------------------------------------------------*/
+/*------------------------------- Flat Color Buttons End --------------------------------*/
 
 .button-xs{line-height: 20px; font-size: 10px; padding: 0px 6px;}
 .button-lg{padding: 10px 40px; font-size: 20px;}
 .button-xl{padding: 13px 50px; font-size: 24px;}
 .button-rounded{border-radius: 5px;}
+.button-box{border-radius: 10px;}
 .button-pill{border-radius: 400px;}
+.button-circle {border-radius: 100%; padding: 10px 18px;}
+.fa{font-size: 16px; line-height: 24px !important; padding: 5px 0px;}
