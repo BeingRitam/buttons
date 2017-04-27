@@ -1,7 +1,7 @@
 /*Buttons (Beta/v 0.4) - A free & open-source CSS3 button library for your web projects. */
 /* Created By - Ritam Das */
 
-.button{
+.button, .button:visited{
   color: #666;
   background-color: #EEE;
   font-weight: 300;
@@ -16,6 +16,7 @@
   -webkit-transition: all .4s;
   text-decoration: none;
   cursor: pointer;
+  line-height: 24px;
 }
 .button:hover, .button:focus{
   background-color: #f6f6f6;
@@ -34,7 +35,7 @@
           box-shadow: inset 0 1px 3px rgba(0, 0, 0, 0.4);
 }
 
-/*-------------------------------------------------------------------- 3D Buttons Start ----------------------------------------------------------------------*/
+/*------------------------------- 3D Buttons Start ---------------------------------------*/
 .button-3d{
   position: relative;
   top: 0;
@@ -144,8 +145,8 @@
             box-shadow: 0 2px 0 #1b2c3d, 0 3px 3px rgba(0, 0, 0, 0.2);
 }
 
-/*-------------------------------------------------------------------- 3D Buttons Ends ----------------------------------------------------------------------*/
-/*-------------------------------------------------------------------- Pulse Buttons Start ----------------------------------------------------------------------*/
+/*------------------------------ 3D Buttons Ends -------------------------------*/
+/*------------------------------ Pulse Buttons Start ---------------------------*/
 
 .button-pulse{animation: pulse 2s infinite;}
 .button-pulse.button-success{animation: pulse-success 2s infinite;}
@@ -246,8 +247,8 @@
   100%{box-shadow: 0px 0px 0px 0px rgba(89,116,142,0.0);}
 } 
 
-/*-------------------------------------------------------------------- Pulse Buttons End ----------------------------------------------------------------------*/
-/*-------------------------------------------------------------------- Raised Buttons Start ----------------------------------------------------------------------*/
+/*--------------------------------- Pulse Buttons End ----------------------------------------------*/
+/*----------------------------------------- Raised Buttons Start ---------------------------------*/
 .button-raised:active, .button-raised.is-active{box-shadow:  1px 1px 0 rgba(255, 255, 255, 0.7), inset 0 1px 1px rgba(0, 0, 0, 0.3) !important;}
 .button-raised{
   position: relative;
@@ -426,40 +427,40 @@
 .button-border.button-wetasphalt:active, .button-border.button-wetasphalt.is-active{background-color: rgba(52,73,94, 0.6); border-color: rgba(52,73,94, .1); color: rgba(255, 255, 255, 0.6);}
 /*---------------------------- Border Buttons End -----------------------------*/
 /*---------------------------- Flat Color Buttons Start -----------------------------*/
-.button-primary{background-color: #3598DB;}
+.button-primary, .button-primary:visited{background-color: #3598DB; color: #fff;}
 .button-primary:hover, .button-primary:focus{background-color: #63b9f2; color: #fff;}
 .button-primary:active, .button-primary.is-active{color: #3598DB;}
 
-.button-warning{background-color: #fcbb5f;}
+.button-warning, .button-warning:visited{background-color: #fcbb5f; color: #fff;}
 .button-warning:hover, .button-warning:focus{background-color: #ffc87c; color: #fff;}
 .button-warning:active, .button-warning.is-active{color: #eaa94d;}
 
-.button-success{background-color: #6AC53C;}
+.button-success, .button-success:visited{background-color: #6AC53C; color: #fff;}
 .button-success:hover, .button-success:focus{background-color:#84d657; color: #fff;}
 .button-success:active, .button-success.is-active{color: #5fb72f;}
 
-.button-danger{background-color: #FF524E;}
+.button-danger, .button-danger:visited{background-color: #FF524E; color: #fff;}
 .button-danger:hover, .button-danger:focus{background-color: #ff7680; color: #fff;}
 .button-danger:active, .button-danger.is-active{color: #dd2a27;}
 
-.button-wisteria{background-color: #8e44ad;}
+.button-wisteria, .button-wisteria:visited{background-color: #8e44ad; color: #fff;}
 .button-wisteria:hover, .button-wisteria:focus{background-color: #a057bf; color: #fff;}
 .button-wisteria:active, .button-wisteria.is-active{color: #7b309b;}
 
-.button-turquoise{background-color: #1abc9c;}
+.button-turquoise, .button-turquoise:visited{background-color: #1abc9c; color: #fff;}
 .button-turquoise:hover, .button-turquoise:focus{background-color: #3ad8b9; color: #fff;}
 .button-turquoise:active, .button-turquoise.is-active{color: #1abc9c;}
 
-.button-wetasphalt{background-color: #34495e;}
-.button-wetasphalt:hover, .button-turquoise:focus{background-color: #4e6882; color: #fff;}
-.button-wetasphalt:active, .button-turquoise.is-active{color: #263849;}
+.button-wetasphalt, .button-wetasphalt:visited{background-color: #34495e; color: #fff;}
+.button-wetasphalt:hover, .button-wetasphalt:focus{background-color: #4e6882; color: #fff;}
+.button-wetasphalt:active, .button-twetasphalt.is-active{color: #263849;}
 
 .button-primary, .button-warning, .button-danger, .button-success, .button-wisteria, .button-turquoise, .button-wetasphalt{color: #fff;}
 
-
+/*------Hover Animation Start----*/
+/*------Hover Animation End----*/
 
 /*------------------------------- Flat Color Buttons End --------------------------------*/
-
 .button-xs{line-height: 20px; font-size: 10px; padding: 0px 6px;}
 .button-lg{padding: 10px 40px; font-size: 20px;}
 .button-xl{padding: 13px 50px; font-size: 24px;}
@@ -467,4 +468,5 @@
 .button-box{border-radius: 10px;}
 .button-pill{border-radius: 400px;}
 .button-circle {border-radius: 100%; padding: 10px 18px;}
-.fa{font-size: 16px; line-height: 24px !important; padding: 5px 0px;}
+.fa{line-height: 24px !important; padding: 5px 0px;}
+.vertical-middle{display: inline-block; vertical-align: middle; line-height: normal !important;}
